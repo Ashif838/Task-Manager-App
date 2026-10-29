@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav>
+      <!-- My Task text Container -->
+      <div class="task-text">
+        <span id="task-icon"><i class="ri-task-line"></i></span>
+
+        <!-- MY Task text box -->
+        <div class="texts-box">
+          <h1>My Tasks</h1>
+          <p>Stay organized and get things done.</p>
+        </div>
+      </div>
+
+      <!-- Dark Mode Switch  -->
+      <div class="dark-switch">
+          <span id="text">Dark Mode</span>
+
+        <button  data-action="dark-mode">
+          <i class="ri-sun-line"></i>
+        
+        </button>
+        <!-- <div class="toggle-group" >
+          <span id="text">Dark Mode <i class="ri-sun-line"></i> </span>
+          <label class="switch" >
+            <button >  </button>
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div> -->
+
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+
+    <main>
+      <!-- Task Title and Category -->
+      <div class="form-div">
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id="inp-title"
+            placeholder="Enter task title..."
+            value="Demonstration"
+          />
+
+          <div class="categories">
+            <select name="Category" id="category">
+              <option value="" disabled selected>Select Category</option>
+              <option value="Personal">Personal</option>
+              <option value="Errands">shopping</option>
+              <option value="Sports & Workouts">Sports & Workouts</option>
+              <option value="Reading Books">Reading Books</option>
+              <option value="Goals & Planning">Goals & Planning</option>
+              <option value="Journaling">Journaling</option>
+              <option value="Journaling">Finance</option>
+              <option value="Journaling">Household</option>
+              <option value="Journaling">Important</option>
+              <option value="Journaling">Health & Fitness</option>
+              <option value="Journaling">Other</option>
+
+
+
+
+
+            </select>
+
+            <button id="submit" type="submit"><i class="ri-add-line"></i> Add Task</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Adding Card Dynamically -->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
